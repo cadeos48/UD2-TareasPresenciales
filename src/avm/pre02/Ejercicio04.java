@@ -9,14 +9,13 @@ import java.util.Scanner;
 
 /**
  *
- * @author Usuario
+ * @author yo
  */
-public class Ejercicio02 {
-    
-    public static void main(String[] args) {
+public class Ejercicio04 {
+     public static void main(String[] args) {
         //Declaración e inicialización de variables
         int numero = 0;
-        String parOImpar = "";
+        int factorial = 1;
         
         // Entrada de datos
         System.out.println("Dime un número");
@@ -24,13 +23,14 @@ public class Ejercicio02 {
         numero = teclado.nextInt();
         
         //Procesamiento de datos
-        if (numero%2 == 0) {
-            parOImpar = "par";
-        } else {
-            parOImpar = "impar";
+        if (numero <= 0) {
+            System.out.println("Ese numero no es válido");
         }
-        
-        //Salida de datos
-        System.out.println("el número es:  " + parOImpar);
+        else{
+            for (int i = numero; i >0; i--) {
+                factorial = factorial * i;
+            }
+            System.out.println("el factorial de " +numero + " es: " +factorial);
+         }
     }
 }
