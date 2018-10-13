@@ -22,7 +22,7 @@ public class Ejercicio01 {
         Scanner teclado = new Scanner(System.in);
         edad = teclado.nextInt();
         
-        //Procesamento de datos
+        //Procesamiento de datos
         if (edad >= 18){
             evaluacion = "mayor de edad";
         } else {
