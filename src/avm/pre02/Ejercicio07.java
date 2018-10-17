@@ -24,16 +24,14 @@ public class Ejercicio07 {
         Scanner teclado = new Scanner(System.in);
         dividendo = teclado.nextInt();
         
-        
-        
         //Procesamiento y salida de datos
-        //El problema está entre dividendos de 0 a 3!!!!!!!!!!!!!!!!!!!!!
-        if (dividendo >= 0) {            
-            do {
+        if (dividendo >= 0) {       
+            resto = dividendo; // Si el dividendo es menor de 3, el cociente es cero y el resto
+            //será igual al dividendo. No entrará en while porque dividendo es menor a 3
+            while (dividendo >= divisor) {
                 dividendo = dividendo - divisor;                    
                 cociente++;                
             }
-            while (dividendo >= divisor);
             System.out.println("el cociente: " +cociente);
             System.out.println("el resto: " +dividendo);
         } else {
