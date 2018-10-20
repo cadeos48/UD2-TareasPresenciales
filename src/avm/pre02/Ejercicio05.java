@@ -31,7 +31,7 @@ public class Ejercicio05 {
                     una letra dentro del bucle, se produce una excepcion que
                     interrumple la secuencia de instrucciones, da el control
                     a catch, ejecuta las instrucciones que hay entre sus llaves
-                    y luego devulve el control a las instrucciones que hay dentro
+                    y luego devuelve el control a las instrucciones que hay dentro
                     del try. El problema es que la variable contador se inicializa
                     a 0 de nuevo, no guarda el valor que tenia si se ha ejecutado
                     anteriormente alguna vez,así que si un usuario introduce 3
@@ -41,7 +41,7 @@ public class Ejercicio05 {
                     //Entrada de datos
                     System.out.println("Dime un número");
                     numero = teclado.nextInt();
-                    System.out.println(contador);
+                    
                     //Procesamiento de datos
                     suma = numero + suma;//acumulador que realiza la sumatoria
                 }
